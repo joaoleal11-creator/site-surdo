@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Inclua - Acessibilidade & LIBRAS</title>
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col transition-colors duration-200">
+
+  <!-- BARRA DE ACESSIBILIDADE FIXA -->
+  <div class="bg-slate-900 text-white py-2 px-4 sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-2 text-sm">
+      <div class="flex items-center gap-2 font-medium">
+        <i class="fa-solid fa-universal-access text-blue-400 text-lg"></i>
+        <span>Acessibilidade:</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="btn-decrease" class="px-2 py-1 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded font-bold transition" title="Diminuir fonte">A-</button>
+        <button id="btn-reset" class="px-2 py-1 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded font-bold transition" title="Fonte Normal">A</button>
+        <button id="btn-increase" class="px-2 py-1 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded font-bold transition" title="Aumentar fonte">A+</button>
+        <button id="btn-contrast" class="ml-2 px-3 py-1 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded flex items-center gap-2 transition" title="Alto Contraste">
+          <i class="fa-solid fa-circle-half-stroke"></i> Alto Contraste
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVEGAÇÃO -->
+  <header class="bg-white border-b border-slate-200 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xl font-bold shadow">
+          <i class="fa-solid fa-hands-asl-interpreting"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold text-slate-900 leading-none">Portal Inclua</h1>
+          <p class="text-xs text-slate-500">Acessibilidade Digital & LIBRAS</p>
+        </div>
+      </div>
+      <nav class="flex flex-wrap gap-4 font-semibold text-sm">
+        <a href="#estrutura-libras" class="hover:text-blue-600 transition flex items-center gap-1"><i class="fa-solid fa-brain text-purple-500"></i> Gramática LIBRAS</a>
+        <a href="#dicionario" class="hover:text-blue-600 transition flex items-center gap-1"><i class="fa-solid fa-book-open text-blue-500"></i> Dicionário</a>
+        <a href="#programacao" class="hover:text-blue-600 transition flex items-center gap-1"><i class="fa-solid fa-code text-indigo-500"></i> Programação</a>
+        <a href="#editor" class="hover:text-blue-600 transition flex items-center gap-1"><i class="fa-solid fa-laptop-code text-violet-500"></i> Testar Código</a>
+        <a href="#quiz" class="hover:text-blue-600 transition flex items-center gap-1"><i class="fa-solid fa-gamepad text-emerald-500"></i> Quiz LIBRAS</a>
+        <a href="#mural" class="hover:text-blue-600 transition flex items-center gap-1"><i class="fa-solid fa-comments text-amber-500"></i> Mural</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gradient-to-b from-blue-900 via-blue-800 to-slate-900 text-white py-12 px-4 shadow-inner">
+    <div class="max-w-4xl mx-auto text-center space-y-4">
+      <span class="inline-flex items-center gap-2 bg-blue-500/20 text-blue-200 border border-blue-400/30 px-3 py-1 rounded-full text-xs font-semibold">
+        <i class="fa-solid fa-hand text-blue-300"></i> Suporte Completo à Língua Brasileira de Sinais
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Construindo a Web Acessível para Todos</h2>
+      <p class="text-blue-100 max-w-2xl mx-auto text-base sm:text-lg">
+        Navegue por um ambiente preparado para pessoas surdas e ouvintes. Utilize o widget flutuante azul do VLibras na lateral da tela para tradução automática em 3D.
+      </p>
+    </div>
+  </section>
+
+  <!-- ESTRUTURA E PARÂMETROS DA LIBRAS -->
+  <section id="estrutura-libras" class="max-w-6xl mx-auto px-4 py-12 w-full">
+    <div class="text-center mb-8">
+      <h3 class="text-2xl font-bold text-slate-900 flex items-center justify-center gap-2">
+        <i class="fa-solid fa-brain text-purple-600"></i> Como Funciona a LIBRAS (Os 5 Parâmetros)
+      </h3>
+      <p class="text-slate-600 text-sm mt-1">A LIBRAS é uma língua oficial (Lei 10.436/2002) com estrutura gramatical própria fundada em 5 elementos fundamentais:</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-center">
+        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">1</div>
+        <h4 class="font-bold text-slate-900 mb-1">Configuração de Mão (CM)</h4>
+        <p class="text-xs text-slate-600">O formato que a mão assume ao sinalizar. Existem mais de 60 configurações catalogadas.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-center">
+        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">2</div>
+        <h4 class="font-bold text-slate-900 mb-1">Ponto de Articulação (PA)</h4>
+        <p class="text-xs text-slate-600">O local do corpo ou do espaço neutro em frente ao peito onde o sinal é realizado.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-center">
+        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">3</div>
+        <h4 class="font-bold text-slate-900 mb-1">Movimento (M)</h4>
+        <p class="text-xs text-slate-600">Indica se o sinal é estático ou dinâmico (com trajetória em linha, círculos, ondas ou toques).</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-center">
+        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">4</div>
+        <h4 class="font-bold text-slate-900 mb-1">Orientação da Mão (O)</h4>
+        <p class="text-xs text-slate-600">A direção da palma da mão (virada para cima, para baixo, para dentro ou para fora).</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-center">
+        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">5</div>
+        <h4 class="font-bold text-slate-900 mb-1">Expressão Facial/Corporal</h4>
+        <p class="text-xs text-slate-600">Essencial para indicar entonação, sentimentos, perguntas, negações e intensidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DICIONÁRIO ILUSTRADO DE LIBRAS (ILUSTRAÇÕES VETORIAIS DE MÃO) -->
+  <section id="dicionario" class="max-w-6xl mx-auto px-4 py-12 w-full border-t border-slate-200">
+    <div class="text-center mb-8">
+      <h3 class="text-2xl font-bold text-slate-900 flex items-center justify-center gap-2">
+        <i class="fa-solid fa-book-bookmark text-blue-600"></i> Dicionário de Gestos e Alfabeto Ilustrado em LIBRAS
+      </h3>
+      <p class="text-slate-600 text-sm mt-1">Desenhos visuais dos gestos das mãos e o Alfabeto Dactilológico</p>
+    </div>
+
+    <!-- Barra de Pesquisa -->
+    <div class="max-w-md mx-auto mb-8 relative">
+      <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+      <input type="text" id="search-input" placeholder="Buscar sinal ou letra (ex: Olá, Obrigado, Letra A...)" class="w-full pl-10 pr-4 py-2 bg-white border border-slate-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
+    </div>
+
+    <!-- Grid de Sinais -->
+    <div id="dictionary-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Inserido via JavaScript -->
+    </div>
+
+
+    <!-- GALERIA DE IMAGENS DO ALFABETO MANUAL EM LIBRAS -->
+    <div class="mt-10 border-t border-slate-200 pt-8">
+      <div class="text-center mb-6">
+        <h4 class="text-xl font-bold text-slate-900">Imagens do Alfabeto Manual em LIBRAS</h4>
+        <p class="text-sm text-slate-600 mt-1">Configurações de mão para as letras A, B e C (datilologia).</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <figure class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+          <img src="imagens/libras-a.png" alt="Configuração da mão para a letra A no alfabeto manual de LIBRAS" loading="lazy" decoding="async" class="w-full max-w-[220px] h-auto mx-auto rounded-lg">
+          <figcaption class="mt-3 font-semibold text-slate-800">Letra A</figcaption>
+        </figure>
+        <figure class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+          <img src="imagens/libras-b.png" alt="Configuração da mão para a letra B no alfabeto manual de LIBRAS" loading="lazy" decoding="async" class="w-full max-w-[220px] h-auto mx-auto rounded-lg">
+          <figcaption class="mt-3 font-semibold text-slate-800">Letra B</figcaption>
+        </figure>
+        <figure class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+          <img src="imagens/libras-c.png" alt="Configuração da mão para a letra C no alfabeto manual de LIBRAS" loading="lazy" decoding="async" class="w-full max-w-[220px] h-auto mx-auto rounded-lg">
+          <figcaption class="mt-3 font-semibold text-slate-800">Letra C</figcaption>
+        </figure>
+      </div>
+      <p class="text-xs text-slate-500 text-center mt-5">Referência visual: <a href="https://sia.cps.sp.gov.br/alfabeto-manual-em-libras/" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline">Superintendência de Inclusão e Acessibilidade do Centro Paula Souza</a>.</p>
+    </div>
+  </section>
+
+  <!-- CURSO COMPLETO DE PROGRAMAÇÃO WEB PARA SURDOS -->
+  <section id="programacao" class="bg-slate-100 py-12 px-4 border-y border-slate-200">
+    <div class="max-w-6xl mx-auto w-full">
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-bold text-slate-900 flex items-center justify-center gap-2">
+          <i class="fa-solid fa-code text-indigo-600"></i> Aprender Programação para Surdos (Curso Completo)
+        </h3>
+        <p class="text-slate-600 text-sm mt-1">Conceitos fundamentais da lógica de programação explicados passo a passo</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm max-w-4xl mx-auto mb-8 space-y-6">
+        <div>
+          <h4 class="text-lg font-bold text-indigo-900 mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-graduation-cap text-indigo-600"></i> A Tecnologia é 100% Visual e Lógica
+          </h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            A programação é a arte de dar instruções lógicas a um computador para criar softwares, aplicativos e websites. Para a comunidade surda, a programação representa um caminho altamente inclusivo, pois a comunicação com o código acontece totalmente por meio de escrita visual e lógica sequencial.
+          </p>
+        </div>
+
+        <!-- Abas do Curso -->
+        <div class="pt-4 border-t border-slate-100">
+          <div class="flex justify-center gap-2 mb-6 flex-wrap">
+            <button onclick="switchTab('html')" id="tab-html" class="tech-tab active font-bold px-4 py-2 rounded-lg bg-indigo-600 text-white transition">1. HTML (Estrutura)</button>
+            <button onclick="switchTab('css')" id="tab-css" class="tech-tab font-bold px-4 py-2 rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition">2. CSS (Estilização)</button>
+            <button onclick="switchTab('js')" id="tab-js" class="tech-tab font-bold px-4 py-2 rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition">3. JavaScript (Lógica)</button>
+            <button onclick="switchTab('acessibilidade')" id="tab-acessibilidade" class="tech-tab font-bold px-4 py-2 rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition">4. Acessibilidade (ARIA)</button>
+          </div>
+
+          <!-- Conteúdo Dinâmico -->
+          <div id="tab-content">
+            <!-- Inserido via JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDITOR DE CÓDIGO INTERATIVO (PLAYGROUND) -->
+  <section id="editor" class="max-w-6xl mx-auto px-4 py-12 w-full">
+    <div class="text-center mb-8">
+      <h3 class="text-2xl font-bold text-slate-900 flex items-center justify-center gap-2">
+        <i class="fa-solid fa-laptop-code text-violet-600"></i> Playground: Teste seu Código em Tempo Real
+      </h3>
+      <p class="text-slate-600 text-sm mt-1">Edite o código abaixo para ver a transformação do site imediatamente no painel ao lado</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 bg-slate-900 p-4 sm:p-6 rounded-2xl shadow-lg border border-slate-800">
+      <!-- Painel de Código -->
+      <div class="flex flex-col">
+        <div class="flex justify-between items-center mb-2 px-1">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
+            <i class="fa-solid fa-terminal text-emerald-400"></i> Editor HTML & CSS
+          </span>
+          <button id="btn-run-code" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-3 py-1 rounded text-xs transition flex items-center gap-1">
+            <i class="fa-solid fa-play"></i> Executar
+          </button>
+        </div>
+        <textarea id="code-input" rows="12" class="w-full bg-slate-950 text-slate-100 font-mono text-sm p-4 rounded-xl border border-slate-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none leading-relaxed resize-y" placeholder="Digite seu código HTML/CSS aqui..."></textarea>
+      </div>
+
+      <!-- Painel de Pré-visualização -->
+      <div class="flex flex-col">
+        <div class="flex justify-between items-center mb-2 px-1">
+          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
+            <i class="fa-solid fa-desktop text-blue-400"></i> Resultado Visual
+          </span>
+        </div>
+        <iframe id="code-output" class="w-full h-full min-h-[250px] bg-white rounded-xl border border-slate-800 shadow-inner"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ INTERATIVO DE LIBRAS -->
+  <section id="quiz" class="bg-slate-100 py-12 px-4 border-y border-slate-200">
+    <div class="max-w-3xl mx-auto">
+      <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-6 sm:p-8">
+        <div class="flex justify-between items-center mb-6 pb-4 border-b border-slate-100">
+          <div>
+            <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+              <i class="fa-solid fa-circle-question text-emerald-600"></i> Quiz: Cultura Surda e LIBRAS
+            </h3>
+            <p class="text-xs text-slate-500 mt-1">Teste seus conhecimentos gerais</p>
+          </div>
+          <div class="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm">
+            Pontos: <span id="quiz-score">0</span>
+          </div>
+        </div>
+
+        <div id="quiz-body" class="space-y-4">
+          <p id="quiz-question" class="text-lg font-semibold text-slate-800">Carregando pergunta...</p>
+          <div id="quiz-options" class="grid grid-cols-1 gap-3"></div>
+          <div id="quiz-feedback" class="hidden p-4 rounded-lg font-medium text-sm border"></div>
+        </div>
+
+        <div class="mt-6 flex justify-end">
+          <button id="btn-next" class="hidden bg-blue-600 hover:bg-blue-700 text-white font-bold px-5 py-2 rounded-lg transition items-center gap-2">
+            Próxima Pergunta <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MURAL DA COMUNIDADE -->
+  <section id="mural" class="max-w-6xl mx-auto px-4 py-12 w-full">
+    <div class="text-center mb-8">
+      <h3 class="text-2xl font-bold text-slate-900 flex items-center justify-center gap-2">
+        <i class="fa-solid fa-comments text-amber-500"></i> Mural da Comunidade
+      </h3>
+      <p class="text-slate-600 text-sm mt-1">Deixe sua mensagem sobre acessibilidade (armazenado localmente)</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Formulário -->
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <form id="mural-form" class="space-y-4">
+          <div>
+            <label for="author" class="block text-sm font-semibold text-slate-700 mb-1">Seu Nome</label>
+            <input type="text" id="author" required placeholder="Ex: Lucas Silva" class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-semibold text-slate-700 mb-1">Mensagem</label>
+            <textarea id="message" rows="3" required placeholder="Digite sua mensagem de apoio..." class="w-full px-3 py-2 bg-slate-50 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded-md text-sm shadow transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-paper-plane"></i> Publicar Recado
+          </button>
+        </form>
+      </div>
+
+      <!-- Feed de Recados -->
+      <div id="mural-feed" class="lg:col-span-2 space-y-4">
+        <!-- Inserido via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="mt-auto bg-slate-900 text-slate-400 text-xs text-center py-6 border-t border-slate-800">
+    <p>&copy; 2026 Portal Inclua - Promovendo a acessibilidade em LIBRAS.</p>
+  </footer>
+
+  <!-- WIDGET VLIBRAS OFICIAL DO GOVERNO FEDERAL -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <!-- SCRIPT VLIBRAS E SCRIPT DA APLICAÇÃO -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
