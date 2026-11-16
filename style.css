@@ -1,0 +1,40 @@
+/* ESTILOS DE SUPORTE AO MODO DE ALTO CONTRASTE */
+body.high-contrast {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+  
+  body.high-contrast header,
+  body.high-contrast section,
+  body.high-contrast div,
+  body.high-contrast footer,
+  body.high-contrast form {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffff00 !important;
+  }
+  
+  body.high-contrast input,
+  body.high-contrast textarea {
+    background-color: #121212 !important;
+    color: #ffff00 !important;
+    border-color: #ffff00 !important;
+  }
+  
+  body.high-contrast button {
+    background-color: #ffff00 !important;
+    color: #000000 !important;
+    border-color: #ffff00 !important;
+    font-weight: bold !important;
+  }
+  
+  body.high-contrast a {
+    color: #ffff00 !important;
+  }
+  
+  body.high-contrast svg path,
+  body.high-contrast svg circle,
+  body.high-contrast svg rect {
+    stroke: #ffff00 !important;
+  }
+  
